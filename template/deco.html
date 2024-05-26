@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link crossorigin="anonymous" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqD9f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKg/X/CoP1zQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACoP1/wqD9f8AAAAACoP1/wqD9f8AAAAAAAAAAAAAAAAKg/X/CoP1/wAAAAAAAAAAAAAAAAAAAAAAAAAACoP1/wqD9f8AAAAAAAAAAAqD9c0Kg/X/AAAAAAAAAAAAAAAAAAAAAAqD9f8Kg/X/AAAAAAAAAAAAAAAACoP1/wqD9f8AAAAAAAAAAAAAAAAKg/V+CoP1/wqD9X4AAAAAAAAAAAAAAAAAAAAACoP1/wqD9f8AAAAACoP1/wqD9f8AAAAAAAAAAAAAAAAAAAAAAAAAAAqD9f8Kg/XNAAAAAAAAAAAAAAAAAAAAAAAAAAAKg/X/CoP1/wqD9f8Kg/X/AAAAAAAAAAAAAAAAAAAAAAAAAAAKg/XNCoP1/wAAAAAAAAAAAAAAAAAAAAAAAAAACoP1/wqD9f8AAAAACoP1/wqD9f8AAAAAAAAAAAAAAAAAAAAACoP1fgqD9f8Kg/V+AAAAAAAAAAAAAAAACoP1/wqD9f8AAAAAAAAAAAAAAAAKg/X/CoP1/wAAAAAAAAAAAAAAAAAAAAAKg/X/CoP1zQAAAAAAAAAACoP1/wqD9f8AAAAAAAAAAAAAAAAAAAAAAAAAAAqD9f8Kg/X/AAAAAAAAAAAAAAAACoP1/wqD9f8AAAAACoP1/wqD9f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqD9c0Kg/X/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACoP1/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD9/wAA/P8AAOTnAADM8wAAnvkAAD58AAA+fAAAn3kAAM8zAADnJwAA/z8AAP+/AAD//wAA//8AAA==" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
+    <title>Zone 01</title>
+  </head>
+  <body>
+<div class="trame"></div>
+<div id="logo1"class="logo"></div>
+<div id="content" class="page-container">
+  <div id="error"></div>
+  <div id="welcome" class="title welcome">Bienvenue à <span style="color:rgb(16,110,250);">Zone01</span>&thinsp;!</div>
+
+  <div class="blocks-container">
+    <div class="left">
+      <div class="text">
+		<h2>Démarrez la première étape de <br>l’inscription – Les jeux cognitifs.</h2>
+		<br />
+        <span id="zone-01-process">Il s'agit d'un jeu en deux parties qui défie votre mémoire et votre logique.</span>
+        <br /><br />
+        1)
+        <span id="instruction-1">Préparez-vous pour le test en ligne d'1h30.</span>
+        <br />
+        2) <span id="instruction-2">Créez un compte et connectez-vous à la plateforme.</span>
+        <br />
+        3) <span id="instruction-3">Complétez le test - rappelez-vous, vous ne pouvez pas faire pause !</span>
+        <br />
+		4) <span id="instruction-4">Vous obtiendrez vos résultats directement depuis la plateforme.</span>
+        <br />
+		<br />
+		<h2>Bonne chance !</h2>
+		<br />
+		<span>En cas de succès aux jeux cognitifs, la plateforme vous informera des prochaines étapes.</>
+		<br />
+		<span>Sinon, vous avez 1 essai supplémentaire pour faire de votre mieux !</span>
+		<br />
+		<span>C'est tout ! Si tu as déja créé un compte, connecte-toi pour compléter ta candidature.</span>
+		<br />
+		<br />
+		<span id="account"> La sélection pour la prochaine piscine du <span style="color: rgb(16,110,250);">26 juin</span>
+		a déjà commencé, tu as jusqu'au <span style="color: rgb(16,110,250);"> 24 juin </span>pour t'inscrire ! </span>
+		<br />
+		<br />
+		<h2>Vous voulez en savoir plus sur Zone01 Rouen ?</h2>
+		<br />
+		<span>Suivez-nous sur nos <a href="https://linktr.ee/zone01rouen" target="_blank" style="color: hsl(216, 96%, 52%)">réseaux sociaux</a> et consultez notre <a href="https://zone01rouennormandie.org/" target="_blank" style="color: hsl(216, 96%, 52%)">site web</a>.</span>
+      </div>
+    </div>
+
+    <div class="right" style="justify-content: normal!important">
+	    <iframe width="720" height="340" src="https://www.youtube.com/embed/nBFEsXr5A4A" title="Zone01 Presentation" frameborder="0" allowfullscreen style="margin-bottom: 100px"></iframe>
+      <div id="authenticate" class="authenticate">
+        <form id="login-form" >
+          <div class="login">
+            <ul>
+              <li class="login-register">
+                <label id="email-label" for="email-field">Email or Username</label>
+                <input type="text" id="email-field" name="email" required />
+              </li>
+              <li id="password-wrap" class="password">
+                <label for="password-field">Password</label>
+
+                <div class="password-container">
+                  <input type="password" id="password-field" name="password" minlength="6" autocomplete="new-password"
+                    title="Password does not meet the requirements" required />
+                  <!-- eye svg -->
+                  <span class="eye"><i id="eye" class="far fa-eye"></i></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <p id="error-message" class="error-message"></p>
+          
+          <div id="buttons">
+            <button type="submit" class="authenticate-button" id="authenticate-button">Se connecter</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
